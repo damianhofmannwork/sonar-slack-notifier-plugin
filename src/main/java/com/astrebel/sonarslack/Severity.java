@@ -19,8 +19,7 @@ public enum Severity {
 		return options;
 	}
 	
-	public static Severity valueOrDefault(String option)
-	{
+	public static Severity valueOrDefault(String option) {
 		for (Severity value : Severity.values()) {
 			if (value.name().equalsIgnoreCase(option)) {
 				return value;

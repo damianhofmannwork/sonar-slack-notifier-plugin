@@ -73,7 +73,7 @@ public class SlackNotificationChannel extends NotificationChannel {
 			 message.setAttachment(attachment);
 		 }
 		 
-		 if ("new-issues".equals(notification.getType())){
+		 if ("new-issues".equals(notification.getType())) {
 			 int countBlockers = getOrDefaultZero(notification.getFieldValue("SEVERITY.BLOCKER.count"));
 			 int countCriticals = getOrDefaultZero(notification.getFieldValue("SEVERITY.CRITICAL.count"));
 			 int countMajors = getOrDefaultZero(notification.getFieldValue("SEVERITY.MAJOR.count"));
